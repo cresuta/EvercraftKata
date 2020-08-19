@@ -14,15 +14,4 @@ public class EvercraftApplication {
         GameCharacter opponent = new GameCharacter();
     }
 
-
-    public static String attackHit() {
-        Random random = new Random();
-        int opponentArmorClass = 10;
-        int diceRoll = random.nextInt(20);
-        if (diceRoll > opponentArmorClass) {
-            return "You attack first and win! You live to see fight another day.";
-        } else {
-            return "Opponent gets first attack. You lose.";
-        }
-    }
 }
