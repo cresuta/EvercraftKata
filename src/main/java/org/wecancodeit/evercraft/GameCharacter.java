@@ -1,11 +1,14 @@
 package org.wecancodeit.evercraft;
 
+import java.util.Random;
+
 public class GameCharacter {
 
     private String name;
     private Alignment alignment;
     private int armorClass = 10;
     private int hitPoints = 5;
+
 
     public String getName() {
         return name;

@@ -39,4 +39,10 @@ public class EvercraftTest {
         GameCharacter underTest = new GameCharacter();
         assertEquals(5, underTest.getHitPoints());
     }
+    @Test
+    public void chanceOfAttack() {
+        GameCharacter underTest = new GameCharacter();
+
+    }
+
 }
