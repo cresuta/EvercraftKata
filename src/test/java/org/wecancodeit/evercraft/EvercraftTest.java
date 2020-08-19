@@ -29,4 +29,14 @@ public class EvercraftTest {
         underTest.setAlignment(Alignment.Neutral);
         assertEquals(Alignment.Neutral, underTest.getAlignment());
     }
+    @Test
+    public void retrieveArmorDefault() {
+        GameCharacter underTest = new GameCharacter();
+        assertEquals(10, underTest.getArmorClass());
+    }
+    @Test
+    public void retrieveHitPointDefault() {
+        GameCharacter underTest = new GameCharacter();
+        assertEquals(5, underTest.getHitPoints());
+    }
 }

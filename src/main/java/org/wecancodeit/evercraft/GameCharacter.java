@@ -4,7 +4,8 @@ public class GameCharacter {
 
     private String name;
     private Alignment alignment;
-
+    private int armorClass = 10;
+    private int hitPoints = 5;
 
     public String getName() {
         return name;
@@ -21,4 +22,13 @@ public class GameCharacter {
     public void setAlignment(Alignment alignment) {
         this.alignment = alignment;
     }
+
+    public int getArmorClass() {
+        return armorClass;
+    }
+
+    public int getHitPoints() {
+        return hitPoints;
+    }
+
 }
