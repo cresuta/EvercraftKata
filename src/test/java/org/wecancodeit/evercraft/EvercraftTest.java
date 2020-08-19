@@ -18,4 +18,15 @@ public class EvercraftTest {
         underTest.setName("Cam");
         assertEquals("Cam", underTest.getName());
     }
+    @Test
+    public void retrieveAlignment(){
+        GameCharacter underTest = new GameCharacter();
+        assertNull(underTest.getAlignment());
+        underTest.setAlignment(Alignment.Evil);
+        assertEquals(Alignment.Evil, underTest.getAlignment());
+        underTest.setAlignment(Alignment.Good);
+        assertEquals(Alignment.Good, underTest.getAlignment());
+        underTest.setAlignment(Alignment.Neutral);
+        assertEquals(Alignment.Neutral, underTest.getAlignment());
+    }
 }
