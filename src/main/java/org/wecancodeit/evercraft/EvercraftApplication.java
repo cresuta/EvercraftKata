@@ -11,7 +11,7 @@ public class EvercraftApplication {
     public static void main(String[] args) {
         SpringApplication.run(EvercraftApplication.class, args);
         GameCharacter mainCharacter = new GameCharacter();
-        GameCharacter opponent = new GameCharacter();
+        System.out.println(mainCharacter.attackHit());
     }
 
 }

@@ -42,7 +42,8 @@ public class EvercraftTest {
     @Test
     public void chanceOfAttack() {
         GameCharacter underTest = new GameCharacter();
-        underTest.attackHit();
+        String result = underTest.attackHit();
+        System.out.println(result);
     }
 
 }

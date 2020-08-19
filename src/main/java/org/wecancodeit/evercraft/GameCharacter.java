@@ -2,13 +2,18 @@ package org.wecancodeit.evercraft;
 
 import java.util.Random;
 
-public class GameCharacter {
+public class GameCharacter extends Ability {
 
     private String name;
     private Alignment alignment;
     private int armorClass = 10;
     private int hitPoints = 5;
-
+    private Ability strength;
+    private Ability dexterity;
+    private Ability constitution;
+    private Ability wisdom;
+    private Ability intelligence;
+    private Ability charisma;
 
     public String getName() {
         return name;
@@ -32,6 +37,54 @@ public class GameCharacter {
 
     public int getHitPoints() {
         return hitPoints;
+    }
+
+    public Ability getStrength() {
+        return strength;
+    }
+
+    public void setStrength(Ability strength) {
+        this.strength = strength;
+    }
+
+    public Ability getDexterity() {
+        return dexterity;
+    }
+
+    public void setDexterity(Ability dexterity) {
+        this.dexterity = dexterity;
+    }
+
+    public Ability getConstitution() {
+        return constitution;
+    }
+
+    public void setConstitution(Ability constitution) {
+        this.constitution = constitution;
+    }
+
+    public Ability getWisdom() {
+        return wisdom;
+    }
+
+    public void setWisdom(Ability wisdom) {
+        this.wisdom = wisdom;
+    }
+
+    public Ability getIntelligence() {
+        return intelligence;
+    }
+
+    public void setIntelligence(Ability intelligence) {
+        this.intelligence = intelligence;
+    }
+
+    public Ability getCharisma() {
+        return charisma;
+    }
+
+    public void setCharisma(Ability charisma) {
+        this.charisma = charisma;
     }
 
     public String attackHit() {
