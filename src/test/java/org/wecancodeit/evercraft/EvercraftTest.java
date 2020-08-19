@@ -40,9 +40,9 @@ public class EvercraftTest {
         assertEquals(5, underTest.getHitPoints());
     }
     @Test
-    public void chanceOfAttack() {
+    public void canAttack() {
         GameCharacter underTest = new GameCharacter();
-        String result = underTest.attackHit();
+        boolean result = underTest.canAttack();
         System.out.println(result);
     }
 

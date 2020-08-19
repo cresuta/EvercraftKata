@@ -87,14 +87,14 @@ public class GameCharacter extends Ability {
         this.charisma = charisma;
     }
 
-    public String attackHit() {
+    public boolean canAttack() {
         Random random = new Random();
         int opponentArmorClass = 10;
         int diceRoll = random.nextInt(20);
         if (diceRoll > opponentArmorClass) {
-            return "You attack first and win! You live to see fight another day.";
+            return true;
         } else {
-            return "Opponent gets first attack. You lose.";
+            return false;
         }
     }
 }
