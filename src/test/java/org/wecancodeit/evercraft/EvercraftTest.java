@@ -43,7 +43,17 @@ public class EvercraftTest {
     public void canAttack() {
         GameCharacter underTest = new GameCharacter();
         boolean result = underTest.canAttack();
-        System.out.println(result);
     }
+    @Test
+    public void retrieveAbilityScores() {
+        GameCharacter underTest = new GameCharacter();
+        assertEquals(10, underTest.getStrength());
+        assertEquals(10, underTest.getDexterity());
+        assertEquals(10, underTest.getConstitution());
+        assertEquals(10, underTest.getWisdom());
+        assertEquals(10, underTest.getIntelligence());
+        assertEquals(10, underTest.getCharisma());
+    }
+
 
 }
