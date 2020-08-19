@@ -8,12 +8,12 @@ public class GameCharacter extends Ability {
     private Alignment alignment;
     private int armorClass = 10;
     private int hitPoints = 5;
-    private Ability strength;
-    private Ability dexterity;
-    private Ability constitution;
-    private Ability wisdom;
-    private Ability intelligence;
-    private Ability charisma;
+    private int strength = 10;
+    private int dexterity = 10;
+    private int constitution = 10;
+    private int wisdom = 10;
+    private int intelligence = 10;
+    private int charisma = 10;
 
     public String getName() {
         return name;
@@ -35,55 +35,63 @@ public class GameCharacter extends Ability {
         return armorClass;
     }
 
+    public void setArmorClass(int armorClass) {
+        this.armorClass = armorClass;
+    }
+
     public int getHitPoints() {
         return hitPoints;
     }
 
-    public Ability getStrength() {
+    public void setHitPoints(int hitPoints) {
+        this.hitPoints = hitPoints;
+    }
+
+    public int getStrength() {
         return strength;
     }
 
-    public void setStrength(Ability strength) {
+    public void setStrength(int strength) {
         this.strength = strength;
     }
 
-    public Ability getDexterity() {
+    public int getDexterity() {
         return dexterity;
     }
 
-    public void setDexterity(Ability dexterity) {
+    public void setDexterity(int dexterity) {
         this.dexterity = dexterity;
     }
 
-    public Ability getConstitution() {
+    public int getConstitution() {
         return constitution;
     }
 
-    public void setConstitution(Ability constitution) {
+    public void setConstitution(int constitution) {
         this.constitution = constitution;
     }
 
-    public Ability getWisdom() {
+    public int getWisdom() {
         return wisdom;
     }
 
-    public void setWisdom(Ability wisdom) {
+    public void setWisdom(int wisdom) {
         this.wisdom = wisdom;
     }
 
-    public Ability getIntelligence() {
+    public int getIntelligence() {
         return intelligence;
     }
 
-    public void setIntelligence(Ability intelligence) {
+    public void setIntelligence(int intelligence) {
         this.intelligence = intelligence;
     }
 
-    public Ability getCharisma() {
+    public int getCharisma() {
         return charisma;
     }
 
-    public void setCharisma(Ability charisma) {
+    public void setCharisma(int charisma) {
         this.charisma = charisma;
     }
 

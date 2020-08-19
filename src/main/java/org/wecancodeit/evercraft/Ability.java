@@ -16,7 +16,15 @@ public class Ability {
         return score;
     }
 
+    public void setScore(int score) {
+        this.score = score;
+    }
+
     public int getModifier() {
         return modifier;
+    }
+
+    public void setModifier(int modifier) {
+        this.modifier = modifier;
     }
 }
